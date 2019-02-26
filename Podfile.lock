@@ -1,0 +1,32 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - Protobuf (3.6.1)
+  - Socket.IO-Client-Swift (14.0.0):
+    - Starscream (~> 3.0.6)
+  - SocketRocket (0.5.1)
+  - Starscream (3.0.6)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - Protobuf
+  - Socket.IO-Client-Swift (~> 14.0.0)
+  - SocketRocket
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
+    - Protobuf
+    - Socket.IO-Client-Swift
+    - SocketRocket
+    - Starscream
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  Socket.IO-Client-Swift: 21e6a8a23a7d367d5ddfab6cbbd3c679cf3c25d6
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+
+PODFILE CHECKSUM: 366a7c021bf684579b35f131dd0191a4fbcbc02d
+
+COCOAPODS: 1.5.3
