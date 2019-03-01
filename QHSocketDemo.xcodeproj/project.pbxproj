@@ -38,6 +38,9 @@
 		743DA4C421F70B0B006800DD /* QHCocoaAsyncSocketServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 743DA4C221F70B0B006800DD /* QHCocoaAsyncSocketServerViewController.xib */; };
 		743DA4C921F71905006800DD /* QHSocketHttpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 743DA4C721F71905006800DD /* QHSocketHttpViewController.m */; };
 		743DA4CA21F71905006800DD /* QHSocketHttpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 743DA4C821F71905006800DD /* QHSocketHttpViewController.xib */; };
+		7447022F22292FEA0043B2DA /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7447022E22292FEA0043B2DA /* SimplePing.m */; };
+		744702332229301D0043B2DA /* QHSimplePingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744702312229301D0043B2DA /* QHSimplePingViewController.m */; };
+		744702342229301D0043B2DA /* QHSimplePingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744702322229301D0043B2DA /* QHSimplePingViewController.xib */; };
 		74D50B8E21FEB16E00B0B101 /* QHPBDemo.proto in Sources */ = {isa = PBXBuildFile; fileRef = 74D50B8D21FEB16E00B0B101 /* QHPBDemo.proto */; };
 		74D50B9421FEB46900B0B101 /* Qhpbdemo.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D50B9321FEB46900B0B101 /* Qhpbdemo.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
@@ -91,6 +94,11 @@
 		743DA4C621F71905006800DD /* QHSocketHttpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QHSocketHttpViewController.h; sourceTree = "<group>"; };
 		743DA4C721F71905006800DD /* QHSocketHttpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QHSocketHttpViewController.m; sourceTree = "<group>"; };
 		743DA4C821F71905006800DD /* QHSocketHttpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QHSocketHttpViewController.xib; sourceTree = "<group>"; };
+		7447022D22292FEA0043B2DA /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		7447022E22292FEA0043B2DA /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		744702302229301D0043B2DA /* QHSimplePingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QHSimplePingViewController.h; sourceTree = "<group>"; };
+		744702312229301D0043B2DA /* QHSimplePingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QHSimplePingViewController.m; sourceTree = "<group>"; };
+		744702322229301D0043B2DA /* QHSimplePingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QHSimplePingViewController.xib; sourceTree = "<group>"; };
 		74D50B8D21FEB16E00B0B101 /* QHPBDemo.proto */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.protobuf; path = QHPBDemo.proto; sourceTree = "<group>"; };
 		74D50B9221FEB46900B0B101 /* Qhpbdemo.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Qhpbdemo.pbobjc.h; sourceTree = "<group>"; };
 		74D50B9321FEB46900B0B101 /* Qhpbdemo.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Qhpbdemo.pbobjc.m; sourceTree = "<group>"; };
@@ -162,6 +170,7 @@
 		743DA47221F1A93D006800DD /* QHSocketDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7447022B22292FD10043B2DA /* QHSimplePing */,
 				741E495F2223DFE700D8733C /* QHSocketIO */,
 				741E49592223C79E00D8733C /* QHSRSocket */,
 				743C39C321F9BEBE0027C93E /* QHBytes */,
@@ -252,6 +261,26 @@
 				743DA4C821F71905006800DD /* QHSocketHttpViewController.xib */,
 			);
 			path = QHSocketHttp;
+			sourceTree = "<group>";
+		};
+		7447022B22292FD10043B2DA /* QHSimplePing */ = {
+			isa = PBXGroup;
+			children = (
+				7447022C22292FEA0043B2DA /* Common */,
+				744702302229301D0043B2DA /* QHSimplePingViewController.h */,
+				744702312229301D0043B2DA /* QHSimplePingViewController.m */,
+				744702322229301D0043B2DA /* QHSimplePingViewController.xib */,
+			);
+			path = QHSimplePing;
+			sourceTree = "<group>";
+		};
+		7447022C22292FEA0043B2DA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7447022D22292FEA0043B2DA /* SimplePing.h */,
+				7447022E22292FEA0043B2DA /* SimplePing.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		74D50B8C21FEB10D00B0B101 /* QHPB */ = {
@@ -352,6 +381,7 @@
 				743DA4B021F5DF05006800DD /* QHCFSocketClientViewController.xib in Resources */,
 				743DA48D21F1A93F006800DD /* LaunchScreen.storyboard in Resources */,
 				741E495E2223C7C700D8733C /* QHSRSocketClientViewController.xib in Resources */,
+				744702342229301D0043B2DA /* QHSimplePingViewController.xib in Resources */,
 				743DA48A21F1A93F006800DD /* Assets.xcassets in Resources */,
 				743DA48821F1A93D006800DD /* Main.storyboard in Resources */,
 			);
@@ -416,6 +446,7 @@
 				743DA4AF21F5DF05006800DD /* QHCFSocketClientViewController.m in Sources */,
 				743DA4BE21F70553006800DD /* QHCocoaAsyncSocketClientViewController.m in Sources */,
 				74D50B9421FEB46900B0B101 /* Qhpbdemo.pbobjc.m in Sources */,
+				7447022F22292FEA0043B2DA /* SimplePing.m in Sources */,
 				741E495D2223C7C700D8733C /* QHSRSocketClientViewController.m in Sources */,
 				741E49632223E00600D8733C /* QHSocketIOClientViewController.m in Sources */,
 				743DA47C21F1A93D006800DD /* QHDetailRootViewController.m in Sources */,
@@ -425,6 +456,7 @@
 				743DA48021F1A93D006800DD /* QHTableSubViewController.m in Sources */,
 				743DA49021F1A93F006800DD /* main.m in Sources */,
 				743DA49A21F1AB9A006800DD /* QHSocketServerViewController.m in Sources */,
+				744702332229301D0043B2DA /* QHSimplePingViewController.m in Sources */,
 				743DA49F21F579FE006800DD /* QHSockettClientViewController.m in Sources */,
 				743DA48521F1A93D006800DD /* ViewController.m in Sources */,
 				743DA4AA21F5DEC2006800DD /* QHCFSocketServerViewController.m in Sources */,

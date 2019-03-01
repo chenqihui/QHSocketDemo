@@ -21,6 +21,7 @@
 #import "QHCFSocketBytesClientViewController.h"
 #import "QHSRSocketClientViewController.h"
 #import "QHSocketIOClientViewController.h"
+#import "QHSimplePingViewController.h"
 
 @interface QHTableRootViewController ()
 
@@ -39,7 +40,7 @@
     }];
     [task resume];
     
-    NSArray *array = @[@"SocketServer", @"SocketClient", @"CFSocketServer", @"CFSocketClient", @"CocoaAsyncSocketServer", @"CocoaAsyncSocketClient", @"SRSocketClient", @"SocketIOClient", @"SocketHttp", @"CFSocketBytes"];
+    NSArray *array = @[@"SocketServer", @"SocketClient", @"CFSocketServer", @"CFSocketClient", @"CocoaAsyncSocketServer", @"CocoaAsyncSocketClient", @"SRSocketClient", @"SocketIOClient", @"SocketHttp", @"CFSocketBytes", @"QHSimplePing"];
     self.arData = [NSMutableArray arrayWithArray:array];
 }
 
@@ -103,6 +104,9 @@
     }
     else if ([title isEqualToString:@"CFSocketBytes"]) {
         subVC = [QHCFSocketBytesClientViewController new];
+    }
+    else if ([title isEqualToString:@"QHSimplePing"]) {
+        subVC = [QHSimplePingViewController new];
     }
     else {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];

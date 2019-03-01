@@ -74,7 +74,7 @@
 //        int len = sizeof(opt);
 //        setsockopt(socket, SOL_SOCKET, SO_REUSEADDR, &opt, &len);
         
-        BOOL  bDontLinger = FALSE;
+        BOOL bDontLinger = FALSE;
         setsockopt(socket, SOL_SOCKET, SO_LINGER, (const char*)&bDontLinger, sizeof(BOOL));
         
         shutdown(socket, SHUT_RDWR);
